@@ -1,7 +1,8 @@
 # brc_arm_ws
-Initial workspace required for moveit implementation for robot arm subteam
-
-Runs on ROS2 Humble with Moveit Humble on Ubuntu 22.04 LTS
+- Workspace for robot arm subteam [Moveit2](https://moveit.picknik.ai/humble/index.html) development
+- Runs on [ROS2 Humble](https://docs.ros.org/en/humble/index.html) with Moveit Humble on Ubuntu 22.04 LTS
+- Should be ran on a powerful computer (base station or jetson)
+- BRC arm specific packages found [here](https://github.com/boilerrobotics/brc_arm) and implemented as submodules
 
 ## Installation (For base Moveit2):
 1. Install Ubuntu 22.04 LTS (Virtual machine, WSL2, or bare metal) and [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
