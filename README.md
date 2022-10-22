@@ -13,4 +13,4 @@
       - This may need to be ran multiple times, `--parallel-workers 1` argument may be needed if limited on ram
       - If one package is taking a long time, try building it individualy: `colcon build --packages-select <package_name> --mixin release`
 6. Follow this [tutorial](https://moveit.picknik.ai/humble/doc/tutorials/quickstart_in_rviz/quickstart_in_rviz_tutorial.html) and ensure Moveit2 has been installed correctly
-7. Compile all files, including brc_arm packages using `colcon build --mixin release` (does not compile as of 10/04/2022)
+7. Compile all files, including brc_arm packages using `colcon build --mixin release`
