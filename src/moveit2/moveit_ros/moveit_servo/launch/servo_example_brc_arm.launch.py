@@ -46,20 +46,20 @@ def generate_launch_description():
     servo_params = {"moveit_servo": servo_yaml}
 
     # RViz
-    # rviz_config_file = (
-    #     get_package_share_directory("moveit_servo") + "/config/brc_arm_demo_rviz_config.rviz"
-    # )
-    # rviz_node = Node(
-    #     package="rviz2",
-    #     executable="rviz2",
-    #     name="rviz2",
-    #     output="log",
-    #     arguments=["-d", rviz_config_file],
-    #     parameters=[
-    #         moveit_config_xacro.robot_description,
-    #         moveit_config_xacro.robot_description_semantic,
-    #     ],
-    # )
+    rviz_config_file = (
+        get_package_share_directory("moveit_servo") + "/config/brc_arm_demo_rviz_config.rviz"
+    )
+    rviz_node = Node(
+        package="rviz2",
+        executable="rviz2",
+        name="rviz2",
+        output="log",
+        arguments=["-d", rviz_config_file],
+        parameters=[
+            moveit_config_xacro.robot_description,
+            moveit_config_xacro.robot_description_semantic,
+        ],
+    )
 
     # ros2_control using FakeSystem as hardware
     ros2_controllers_path = os.path.join(
@@ -152,7 +152,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
-            # rviz_node,
+            rviz_node,
             ros2_control_node,
             joint_state_broadcaster_spawner,
             brc_arm_controller_spawner,
