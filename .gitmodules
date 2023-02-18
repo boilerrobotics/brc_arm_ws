@@ -1,6 +1,0 @@
-[submodule "src/brc_arm_packages"]
-	path = src/brc_arm_packages
-	url = https://github.com/boilerrobotics/brc_arm_packages.git
-[submodule "src/brc_arm_pi_packages"]
-	path = src/brc_arm_pi_packages
-	url = https://github.com/boilerrobotics/brc_arm_pi_packages.git
