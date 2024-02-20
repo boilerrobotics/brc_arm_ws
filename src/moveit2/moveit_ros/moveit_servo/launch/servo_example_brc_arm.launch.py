@@ -47,7 +47,7 @@ def generate_launch_description():
 
     # RViz
     rviz_config_file = (
-        get_package_share_directory("moveit_servo") + "/config/brc_arm_demo_rviz_config.rviz"
+        get_package_share_directory("moveit_servo") + "/config/brc_arm_config.rviz"
     )
     rviz_node = Node(
         package="rviz2",

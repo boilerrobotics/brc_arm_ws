@@ -63,65 +63,60 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
-          panda_hand:
+          EEbase_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_leftfinger:
+          Lfinger_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link0:
+          Llink_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link1:
+          Rfinger_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link2:
+          Rlink_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link3:
+          base_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link4:
+          carriage_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link5:
+          midarm1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link6:
+          midarm2_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link7:
+          wrist1_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
             Value: true
-          panda_link8:
+          wrist2_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          panda_rightfinger:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -131,29 +126,27 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        panda_hand:
+        EEbase_link:
           Value: true
-        panda_leftfinger:
+        Lfinger_link:
           Value: false
-        panda_link0:
+        Llink_link:
           Value: false
-        panda_link1:
+        Rfinger_link:
           Value: false
-        panda_link2:
+        Rlink_link:
           Value: false
-        panda_link3:
+        base_link:
           Value: false
-        panda_link4:
+        carriage_link:
           Value: false
-        panda_link5:
+        midarm1_link:
           Value: false
-        panda_link6:
+        midarm2_link:
           Value: false
-        panda_link7:
+        wrist1_link:
           Value: false
-        panda_link8:
-          Value: false
-        panda_rightfinger:
+        wrist2_link:
           Value: false
         world:
           Value: true
@@ -164,20 +157,19 @@ Visualization Manager:
       Show Names: false
       Tree:
         world:
-          panda_link0:
-            panda_link1:
-              panda_link2:
-                panda_link3:
-                  panda_link4:
-                    panda_link5:
-                      panda_link6:
-                        panda_link7:
-                          panda_link8:
-                            panda_hand:
-                              panda_leftfinger:
-                                {}
-                              panda_rightfinger:
-                                {}
+          base_link:
+            carriage_link:
+              midarm1_link:
+                midarm2_link:
+                  wrist1_link:
+                    wrist2_link:
+                      EEbase_link:
+                        Llink_link:
+                          Lfinger_link:
+                            {}
+                        Rlink_link:
+                          Rfinger_link:
+                            {}
       Update Interval: 0
       Value: true
   Enabled: true
